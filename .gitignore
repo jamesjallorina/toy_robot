@@ -21,3 +21,5 @@ main
 Robot
 common
 GameLoop
+test_robot
+dummy_test
