@@ -83,7 +83,7 @@ The application is a simulation of a toy robot moving on a square table top.
 2. The user can then able to execute command namely `PLACE`, `MOVE`, `LEFT`, `RIGHT`, and `REPORT`
 3. The application will then store the user input from the command line and update the state
 of the robot
-4. If the application detects that the will fall, it will reset from its previous state and continues to accept further commands
+4. If the application detects that the robot will fall, it will reset from its previous state and continues to accept further commands
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
