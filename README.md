@@ -117,6 +117,8 @@ Install the following tools
 3. cmake ../source
 2. run main program ./toy_robot
 
+Note: Please use a minimum of C++14 compiler
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- LICENSE -->
