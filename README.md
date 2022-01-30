@@ -115,7 +115,7 @@ Install the following tools
 1. go to the root folder (cd toy_robot)
 2. mkdir build && cd build
 3. cmake ../source
-2. run main program ./main
+2. run main program ./toy_robot
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
