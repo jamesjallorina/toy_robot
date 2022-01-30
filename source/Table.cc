@@ -3,19 +3,22 @@
 
 bool Table::fall_detection(Robot &curr_robot)
 {
-    constexpr int leftmost_x_dim = 0;
-    constexpr int downmost_y_dim = 0;
+    const int leftmost_x_dim = 0;
+    const int rightmost_x_dim = m_dim_x -1;
+    const int downmost_y_dim = 0;
+    const int upmost_y_dim = m_dim_y - 1;
+
     auto is_detected = false;
     const auto curr_state = curr_robot.get_state();
-    if(curr_state.x_pos > m_dim_x || curr_state.x_pos < leftmost_x_dim){
+    if(curr_state.x_pos > rightmost_x_dim || curr_state.x_pos < leftmost_x_dim){
         curr_robot.reset_state();
         is_detected = true;
-        //std::cout << "fall detected in x_coordinate" << std::endl;
+        std::cout << "fall detected in x_coordinate reset to previous state" << std::endl;
     }
-    if(curr_state.y_pos > m_dim_y || curr_state.y_pos < downmost_y_dim){
+    if(curr_state.y_pos > upmost_y_dim || curr_state.y_pos < downmost_y_dim){
         curr_robot.reset_state();
         is_detected = true;
-        //std::cout << "fall detected in y_coordinate" << std::endl;
+        std::cout << "fall detected in y_coordinate reset to previous state" << std::endl;
     }
     return is_detected;
 }
