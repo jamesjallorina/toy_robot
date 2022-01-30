@@ -14,3 +14,10 @@
 
 # vscode
 .vscode
+
+#bin names
+Table
+main
+Robot
+common
+GameLoop
