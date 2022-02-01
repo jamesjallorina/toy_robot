@@ -12,6 +12,9 @@
 *.la
 *.a
 
+# folder names
+build
+
 # vscode
 .vscode
 
