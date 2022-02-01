@@ -36,7 +36,8 @@
 `RIGHT`  
 `REPORT`  
 
-1. `PLACE` will put the toy robot on the table in position X,Y and facing NORTH, SOUTH, EAST or WEST. 2. The origin (0,0) can be considered to be the SOUTH WEST most corner. 
+1. `PLACE` will put the toy robot on the table in position X,Y and facing NORTH, SOUTH, EAST or WEST. 
+2. The origin (0,0) can be considered to be the SOUTH WEST most corner. 
 3. It is required that the first command to the robot is a PLACE command, after that, any sequence of commands may be issued, in any order, including another `PLACE` command. 
 4. The application should discard all commands in the sequence until a valid `PLACE` command has been executed.
 5. `MOVE` will move the toy robot one unit forward in the direction it is currently facing.
