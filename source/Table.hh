@@ -35,6 +35,10 @@ public:
     int get_x_dim() const { return m_dim_x; }
     int get_y_dim() const { return m_dim_y; }
     size_t get_robot_size() const { return robots.size(); }
+    Coordinates get_robot_coordinate(const uint8_t robot_id = unique_robot_index) const
+    {
+        return robots[robot_id].get_state();
+    }
 
 private:
     int m_dim_x = default_x_dim;
